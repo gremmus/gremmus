@@ -8,7 +8,8 @@ app = FastAPI()
 BROKER_URL = os.getenv("BROKER_URL")
 STRATEGY_ID = os.getenv("STRATEGY_ID")
 SECRET = os.getenv("SECRET")
-SYMBOL_MAP = {"XAUUSD": "XAUUSD"} # chart symbol -> broker symbol
+SYMBOL_MAP = {"MNQ1!": "MNQM2026"} # chart symbol -> broker symbol
+
 
 def reshape(p):
  # Predator Native JSON -> Delta Exchange schema
